@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background: #1f1f20;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-container {
+    width: 40vw;
+    min-width: 768px;
+    min-height: 480px;
+    background-color: #fff;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
+        0 10px 10px rgba(0, 0, 0, 0.22);
+    border-radius: 10px;
+    display: flex;
+    user-select: none;
+}
+
+.form-container.login>.side-panel {
+    background: linear-gradient(to right, #FF4B2B 25%, #FF416C 100%);
+    border-radius: 10px 0px 0px 10px;
+    order: -1;
+}
+
+form,
+.side-panel {
+    width: 50%;
+}
+
+form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+form>input {
+    border-radius: 7px;
+    padding: 5px;
+    background-color: #eee;
+	border: none;
+	padding: 12px 15px;
+	margin: 8px 0;
+    width: 70%;
+}
+
+form a:last-of-type{
+    font-size: 20px;
+}
+
+form>input[type="submit"]{
+    width: fit-content;
+    cursor: pointer;
+    border-radius: 20px;
+	border: 1px solid #FF4B2B;
+	background-color: #FF4B2B;
+	color: #FFFFFF;
+	font-size: 12px;
+	font-weight: bold;
+	padding: 12px 45px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	transition: transform 80ms ease-in;
+}
+
+.hide{
+    display: none;
+}
+
+form>input[type="submit"]:active,.singup{
+    transform: scale(0.95);
+}
+
+
+form p:nth-of-type(1) {
+    font-size: 12px;
+}
+
+form a {
+    color: #333;
+    font-size: 14px;
+    text-decoration: none;
+    margin: 15px 0;
+}
+
+.social-networks {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    margin: 20px 0px;
+}
+
+.social-networks>a {
+    border: 1px solid #DDDDDD;
+    border-radius: 50%;
+    margin: 0 5px;
+    height: 40px;
+    width: 40px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.social-networks>a:nth-of-type(1) {
+    background: url("./img/facebook.svg");
+    background-size: 20px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.social-networks>a:nth-of-type(2) {
+    background: url("./img/google.svg");
+    background-size: 20px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.social-networks>a:nth-of-type(3) {
+    background: url("./img/icons8-linkedin.svg");
+    background-size: 20px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.side-panel {
+    background: linear-gradient(to right, #FF4B2B, #FF416C 40%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0 0;
+    border-radius: 0px 10px 10px 0px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    color: white;
+}
+
+.side-panel>p{
+    width: 300px;
+    text-align: center;
+}
+
+.side-panel>button {
+    width: fit-content;
+    cursor: pointer;
+    border-radius: 20px;
+	border: 2px solid #fff;
+	background: transparent;
+	color: #FFFFFF;
+	font-size: 12px;
+	font-weight: bold;
+	padding: 12px 45px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	transition: transform 80ms ease-in;
+    
+}
