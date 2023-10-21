@@ -8,6 +8,16 @@
 
 }
 
+/* #fff left center/50% 100% no-repeat, */
+
+.form-container {
+    background: #fff linear-gradient(to right, #FF4B2B, #FF416C 40%) right center/50% 100% no-repeat;
+}
+
+.form-container.login {
+    background:  #fff linear-gradient(to right, #FF4B2B 25%, #FF416C 100%) left center/50% 100% no-repeat;
+}
+
 body {
     width: 100vw;
     height: 100vh;
@@ -27,6 +37,7 @@ body {
     border-radius: 10px;
     display: flex;
     user-select: none;
+    transition: 300ms;
 }
 
 .form-container.login>.side-panel {
@@ -41,46 +52,49 @@ form,
 }
 
 form {
+    border-radius: 10px 0px 0px 10px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    transition: 300ms;
 }
 
 form>input {
     border-radius: 7px;
     padding: 5px;
     background-color: #eee;
-	border: none;
-	padding: 12px 15px;
-	margin: 8px 0;
+    border: none;
+    padding: 12px 15px;
+    margin: 8px 0;
     width: 70%;
 }
 
-form a:last-of-type{
+form a:last-of-type {
     font-size: 20px;
 }
 
-form>input[type="submit"]{
+form>input[type="submit"] {
     width: fit-content;
     cursor: pointer;
     border-radius: 20px;
-	border: 1px solid #FF4B2B;
-	background-color: #FF4B2B;
-	color: #FFFFFF;
-	font-size: 12px;
-	font-weight: bold;
-	padding: 12px 45px;
-	letter-spacing: 1px;
-	text-transform: uppercase;
-	transition: transform 80ms ease-in;
+    border: 1px solid #FF4B2B;
+    background-color: #FF4B2B;
+    color: #FFFFFF;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 12px 45px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: transform 80ms ease-in;
 }
 
-.hide{
+.hide {
     display: none;
 }
 
-form>input[type="submit"]:active,.singup{
+form>input[type="submit"]:active,
+.singup {
     transform: scale(0.95);
 }
 
@@ -101,7 +115,7 @@ form a {
     align-items: center;
     justify-content: center;
     gap: 10px;
-
+    transition: 300ms;
     margin: 20px 0px;
 }
 
@@ -139,7 +153,6 @@ form a {
 }
 
 .side-panel {
-    background: linear-gradient(to right, #FF4B2B, #FF416C 40%);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 0 0;
@@ -153,7 +166,7 @@ form a {
     color: white;
 }
 
-.side-panel>p{
+.side-panel>p {
     width: 300px;
     text-align: center;
 }
@@ -162,14 +175,14 @@ form a {
     width: fit-content;
     cursor: pointer;
     border-radius: 20px;
-	border: 2px solid #fff;
-	background: transparent;
-	color: #FFFFFF;
-	font-size: 12px;
-	font-weight: bold;
-	padding: 12px 45px;
-	letter-spacing: 1px;
-	text-transform: uppercase;
-	transition: transform 80ms ease-in;
-    
+    border: 2px solid #fff;
+    background: transparent;
+    color: #FFFFFF;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 12px 45px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: transform 80ms ease-in;
+
 }
